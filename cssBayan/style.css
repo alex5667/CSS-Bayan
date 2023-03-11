@@ -124,3 +124,19 @@ body {
 .item__input:checked+.content__title + .input__label,.accordion__item:hover > .input__label{
   background: url("./assets//cross2-svgrepo-com.svg") 0 0/cover;
 } 
+
+#one{
+  background: url(./assets/The_only_mystery_in_life_is_why_the_kamikaze_pilo_eeddd889-4ed8-416f-8bd2-295bd031fbc8.png) 50% 0/contain no-repeat;
+}
+#two{
+  background: url(./assets/I_always_wanted_to_be_somebody_but_now_I_realize__168efc44-dd77-4c65-b627-558a2af1d008.png) 50% 0/contain no-repeat;
+}
+#three{
+  background: url(./assets/I_can_resist_everything_except_temptation._-_Oscar_Wi_634c4e3b-218c-4c2a-a2b1-f83966ab7805.png) 50% 0/contain no-repeat;
+}
+#four{
+  background: url(./assets/Im_not_great_at_the_advice._Can_I_interest_you_in_7e1001bc-4652-48c6-9e2b-a7926e09608c.png) 50% 0/contain no-repeat;
+}
+#five{
+  background: url(./assets/Im_not_superstitious_but_I_am_a_little_stitious_f7b2d744-93bf-4813-9d44-077caa12178c.png) 50% 0/contain no-repeat;
+}
