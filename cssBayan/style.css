@@ -51,3 +51,76 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
+/* main------------------------------------------------------------------- */
+
+.main__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: #e3edf7;
+  border-radius: 0.8rem;
+}
+
+.accordion{
+  width: 100%;
+  padding: 0 0.8rem;
+}
+
+.accordion:hover > .accordion__item> .content__title +.input__label {
+  visibility: visible;
+}
+
+.accordion:hover > .accordion__item {
+  color: #252b42 ;
+}
+
+.accordion__item{
+  display: grid;
+  grid-template: 3rem / 90% 10%;
+  justify-content: space-between;
+  align-items: center;
+  grid-auto-rows: auto;
+  border-radius: 0.8rem;
+  background-color: #e3edf7;
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  color: rgb(33, 53, 236);
+  box-shadow:  0.3rem 0.3rem 0.7rem -0.1rem rgba(0, 0, 0, 0.15),
+  -0.3rem -0.3rem 0.7rem -0.1rem rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.input__label{
+  justify-self: center;
+  height: 1.7rem;
+  width: 1.7rem;
+  cursor: pointer;
+  visibility: hidden;
+  transform:  all ease-in 0.5s;
+  background: url("./assets/cross1-svgrepo-com.svg") 0 0/cover;
+}
+
+.item__input{
+  display: none;
+}
+
+.item__image{
+  grid-column: span 2;
+  height: 0;
+  overflow: hidden;
+  transition: all ease-in 0.5s;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.item__input:checked +.content__title + .input__label +.item__image,
+.accordion__item:hover > .item__image{
+  height: 16rem;
+  width: 100%;
+} 
+
+.item__input:checked+.content__title + .input__label,.accordion__item:hover > .input__label{
+  background: url("./assets//cross2-svgrepo-com.svg") 0 0/cover;
+} 
